@@ -13,7 +13,7 @@
  * - Scene outliner
  */
 
-import React, { useState, useCallback, useEffect, useRef } from 'react';
+import { useState, useCallback, useEffect, useRef } from 'react';
 import type {
   TransformTool,
   EditMode,
@@ -61,7 +61,7 @@ export function ZModelApp({ className = '' }: ZModelAppProps): React.ReactElemen
   const [selectionMode, setSelectionMode] = useState<SelectionMode>('vertex');
   const [shadingMode, setShadingMode] = useState<ShadingMode>('solid');
   const [snapToGrid, setSnapToGrid] = useState(false);
-  const [gridSize, setGridSize] = useState(0.25);
+  const [_gridSize, _setGridSize] = useState(0.25);
 
   // UI state
   const [showOutliner, setShowOutliner] = useState(true);
@@ -74,7 +74,7 @@ export function ZModelApp({ className = '' }: ZModelAppProps): React.ReactElemen
   const [historyIndex, setHistoryIndex] = useState(-1);
 
   // Camera state for overlay
-  const [cameraRotation, setCameraRotation] = useState({ theta: Math.PI / 4, phi: Math.PI / 3 });
+  const [cameraRotation, _setCameraRotation] = useState({ theta: Math.PI / 4, phi: Math.PI / 3 });
 
   // Refs
   const engineRef = useRef<ModelEngine | null>(null);

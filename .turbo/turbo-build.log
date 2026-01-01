@@ -1,0 +1,17 @@
+
+> @zos-apps/zmodel@1.0.0 build /Users/z/work/zeekay/zos-apps/zmodel
+> tsup
+
+CLI Building entry: src/index.tsx
+CLI Using tsconfig: tsconfig.json
+CLI tsup v8.5.1
+CLI Using tsup config: /Users/z/work/zeekay/zos-apps/zmodel/tsup.config.ts
+CLI Target: es2022
+CLI Cleaning output folder
+ESM Build start
+DTS Build start
+ESM dist/index.js     51.46 KB
+ESM dist/index.js.map 241.80 KB
+ESM ⚡️ Build success in 958ms
+DTS ⚡️ Build success in 1195ms
+DTS dist/index.d.ts 711.00 B
