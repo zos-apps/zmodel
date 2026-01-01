@@ -1,0 +1,132 @@
+{
+  "name": "@zos-apps/zmodel",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "zos": {
+    "id": "ai.hanzo.zmodel",
+    "name": "zModel",
+    "icon": "🧊",
+    "category": "creative",
+    "description": "Professional 3D modeling application",
+    "permissions": [
+      "storage.local",
+      "file.read",
+      "file.write"
+    ],
+    "window": {
+      "defaultSize": {
+        "width": 1400,
+        "height": 900
+      },
+      "minSize": {
+        "width": 800,
+        "height": 600
+      },
+      "resizable": true
+    },
+    "about": "Professional 3D modeling, sculpting, and rendering application. Create meshes, apply materials, and export to common formats.",
+    "help": [
+      "Use middle mouse to orbit, shift+middle to pan",
+      "Press Tab to toggle Edit Mode",
+      "Use G, R, S for Move, Rotate, Scale",
+      "Ctrl+Z to undo, Ctrl+Shift+Z to redo"
+    ],
+    "docs": "https://zos-apps.github.io/zmodel",
+    "site": "https://github.com/zos-apps/zmodel",
+    "shortcuts": [
+      "G Move",
+      "R Rotate",
+      "S Scale",
+      "Tab Edit mode",
+      "X Delete",
+      "D Duplicate",
+      "E Extrude",
+      "Ctrl+R Loop cut",
+      "1 Vertex mode",
+      "2 Edge mode",
+      "3 Face mode"
+    ],
+    "features": [
+      "3D viewport with orbit controls",
+      "Primitive creation (cube, sphere, cylinder, plane, torus)",
+      "Transform tools (move, rotate, scale)",
+      "Edit mode (vertex, edge, face)",
+      "Mesh modifiers (extrude, loop cut)",
+      "Material editor",
+      "Scene outliner",
+      "Multiple views (perspective, ortho)"
+    ],
+    "screenshots": {
+      "hero": "screenshots/hero.png",
+      "images": [
+        "screenshots/1-viewport.png",
+        "screenshots/2-edit-mode.png",
+        "screenshots/3-materials.png"
+      ]
+    },
+    "downloads": {
+      "web": "https://zos-apps.github.io/zmodel"
+    },
+    "featured": true,
+    "tags": [
+      "creative",
+      "3d",
+      "modeling",
+      "graphics",
+      "design"
+    ],
+    "releaseDate": "2024-12-29",
+    "support": "https://github.com/zos-apps/zmodel/issues",
+    "changelog": "https://github.com/zos-apps/zmodel/releases"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "dependencies": {
+    "@z-os/core": "workspace:*",
+    "@z-os/sdk": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "@zos-apps/config": "workspace:*",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2"
+  },
+  "description": "Professional 3D modeling application",
+  "homepage": "https://zos-apps.github.io/zmodel",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zos-apps/zmodel.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zos-apps/zmodel/issues"
+  },
+  "author": "Hanzo AI",
+  "license": "MIT",
+  "keywords": [
+    "zos",
+    "app",
+    "3d",
+    "modeling",
+    "blender",
+    "graphics",
+    "creative"
+  ],
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/zos-apps"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}
